@@ -1,0 +1,25 @@
+# Nothing dot-prefixed at the repo root is tracked except the files re-included below.
+/.*
+!/.gitignore
+!/.gitattributes
+!/.github/
+
+# Private agent config and unshared overrides, also in nested copies.
+.agents
+*.local.*
+CLAUDE*
+.claude
+
+# Build output
+build/
+dist/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
