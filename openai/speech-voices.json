@@ -1,0 +1,20 @@
+{
+  "$schema": "../schemas/speech-voices.schema.json",
+  "source": "https://developers.openai.com/api/docs/guides/text-to-speech",
+  "checked": "2026-11-26",
+  "voices": [
+    { "id": "alloy" },
+    { "id": "ash" },
+    { "id": "coral" },
+    { "id": "echo" },
+    { "id": "fable" },
+    { "id": "nova" },
+    { "id": "onyx" },
+    { "id": "sage" },
+    { "id": "shimmer" },
+    { "id": "ballad", "models": ["gpt-4o-mini-tts"] },
+    { "id": "verse", "models": ["gpt-4o-mini-tts"] },
+    { "id": "marin", "models": ["gpt-4o-mini-tts"] },
+    { "id": "cedar", "models": ["gpt-4o-mini-tts"] }
+  ]
+}
