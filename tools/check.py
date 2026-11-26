@@ -83,8 +83,6 @@ def check(root):
         for p in root.glob("*/*.json")
         if p.parent.name != "schemas" and not p.parent.name.startswith(".")
     )
-    if not files:
-        errors.append("no data files found")
     for file in files:
         name = file.relative_to(root).as_posix()
         schema_file = root / "schemas" / f"{file.stem}.schema.json"

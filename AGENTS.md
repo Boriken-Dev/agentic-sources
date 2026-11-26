@@ -1,7 +1,8 @@
 # agentic-sources: repository orientation
 
-JSON lists a catalog needs when a publisher has no API that lists them (voice names, model names, ...). Consumers read a file at
-`main` or a pinned commit; nothing is built or packaged.
+JSON lists a catalog needs when nobody publishes them in any form (an API, a machine-readable description, a feed); a list a
+publisher gives is read from the publisher and has no file here. Consumers read a file at a branch, a tag or a pinned commit;
+nothing is built or packaged.
 
 ## Layout
 
@@ -15,6 +16,7 @@ JSON lists a catalog needs when a publisher has no API that lists them (voice na
 ## Rules
 
 - Every list file has a schema of the same list name, with `additionalProperties: false`; a file without one fails the check.
+- A list its publisher provides in a form a program can read is not added.
 - Every file cites its source and the date it was last compared; an entry the publisher does not document is not added.
 - A change is checked against the publisher's page, then `checked` is set to the date.
 - Public text only: no private paths, hostnames, credentials or plan names. No executables, archives, keys or opaque binaries.
